@@ -1,0 +1,79 @@
+Week 3 Data Preparation Note — Kaduna North Flood Exposure
+
+1. Coordinate Reference System (CRS)
+
+The data was reprojected from EPSG:4326 (WGS 84) to EPSG:32632 (WGS 84 / UTM Zone 32N). This projected CRS uses metres and is suitable for spatial analysis in the Kaduna North study area.
+
+2. Data Reprojected and Clipped
+
+The following datasets were reprojected to EPSG:32632:
+
+* Highways
+* Waterways
+* Waterbodies
+* Buildings
+
+The reprojected datasets were then clipped using the Kaduna North Boundary to limit the analysis to the study area.
+
+The resulting analysis-ready layers are:
+
+* Highway_KadunaNorth — 3,540 features
+* Waterways_KadunaNorth — 3 features
+* Waterbodies_KadunaNorth — 38 features
+* Buildings_KadunaNorth — 94,254 features
+
+3. Five Quality Checks
+
+Check 1 — CRS
+
+All prepared layers use EPSG:32632 (WGS 84 / UTM Zone 32N).
+Result: Pass.
+
+Check 2 — Geometry Type
+
+* Highways: Line
+* Waterways: Point
+* Waterbodies: Polygon
+* Buildings: MultiPolygon
+
+Result: Geometry types were checked. The Waterways layer is represented as points and has been flagged for review rather than changed.
+
+Check 3 — Feature Count
+
+Feature counts were checked after clipping:
+
+* Highways: 3,540
+* Waterways: 3
+* Waterbodies: 38
+* Buildings: 94,254
+
+Result: Pass — feature counts were recorded.
+
+Check 4 — Geometry Validity
+
+QGIS Check Validity was used on the prepared layers.
+
+* Highways: 3,540 valid, 0 invalid
+* Waterways: 3 valid, 0 invalid
+* Waterbodies: 38 valid, 0 invalid
+* Buildings: 94,254 valid, 0 invalid
+
+Result: Pass — no invalid geometries were found.
+
+Check 5 — Study Area / Clipping
+
+The prepared layers were visually checked against the Kaduna North Boundary.
+
+Result: Pass — all clipped features were within the Kaduna North study area.
+
+4. Problems Found
+
+The Waterways dataset was returned as point geometry rather than line geometry and was therefore flagged for review. No invalid geometries were found in the validity check.
+
+5. Analysis-Ready File
+
+The analysis-ready data is stored in:
+
+Kaduna_Flood_Analysis.gpkg
+
+The GeoPackage contains the prepared Kaduna North layers and is located in the project folder.
