@@ -23,3 +23,33 @@ This project aims to identify settlements within Kaduna North Local Government A
 Expected Outcome
 
 The analysis will identify and map settlements that fall within or are close to areas exposed to flood hazards.
+
+Kaduna North Flooding Project
+
+Data Note
+
+This project examines flooding-related features in Kaduna North LGA using OpenStreetMap data downloaded through QuickOSM.
+
+1. Waterways
+
+* Source: OpenStreetMap via QuickOSM
+* Feature count: 8
+* Geometry: Line
+* Key columns: osm_id, osm_type, waterway, railway, ford, seamarktype
+* Notes: Contains mapped waterways within the Kaduna North study area. Some attribute fields may be empty where information is unavailable.
+
+2. Highways
+
+* Source: OpenStreetMap via QuickOSM
+* Feature count: 5,679
+* Geometry: Line
+* Key columns: osm_id, highway, covered, embankment, oneway, surface, name
+* Notes: Contains mapped roads/highways within the Kaduna North study area. Null/empty columns were excluded.
+
+3. Waterbodies
+
+* Source: OpenStreetMap via QuickOSM
+* Feature count: 44
+* Geometry: Polygon
+* Key columns: osm_id, osm_type, natural, water, type
+* Notes: Contains mapped waterbody features within the Kaduna North study area. Some attribute fields may be empty where information is unavailable.
