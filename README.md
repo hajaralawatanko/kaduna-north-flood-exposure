@@ -23,33 +23,37 @@ This project aims to identify settlements within Kaduna North Local Government A
 Expected Outcome
 
 The analysis will identify and map settlements that fall within or are close to areas exposed to flood hazards.
+Kaduna North Flood Exposure Project
 
-Kaduna North Flooding Project
+Which areas of Kaduna North Local Government Area, Kaduna State are exposed to flood-related features?
 
-Data Note
+Built over four weeks with GeoDev Lab Africa, Cohort One.
 
-This project examines flooding-related features in Kaduna North LGA using OpenStreetMap data downloaded through QuickOSM.
+Answer, so far
 
-1. Waterways
+The project prepares and analyses mapped features within Kaduna North LGA that can help identify areas with potential flood exposure.
 
-* Source: OpenStreetMap via QuickOSM
-* Feature count: 8
-* Geometry: Line
-* Key columns: osm_id, osm_type, waterway, railway, ford, seamarktype
-* Notes: Contains mapped waterways within the Kaduna North study area. Some attribute fields may be empty where information is unavailable.
+The data was collected from OpenStreetMap, prepared and clipped to the Kaduna North study area in QGIS. The final analysis-ready data contains 3,540 highways, 3 waterways, and 38 waterbodies.
 
-2. Highways
+This result shows the location of mapped flood-related features within the study area. Further settlement and elevation data would be needed to identify specific settlements and determine which areas are low-lying.
 
-* Source: OpenStreetMap via QuickOSM
-* Feature count: 5,679
-* Geometry: Line
-* Key columns: osm_id, highway, covered, embankment, oneway, surface, name
-* Notes: Contains mapped roads/highways within the Kaduna North study area. Null/empty columns were excluded.
+Weekly Work
 
-3. Waterbodies
+Week 1 — Project Brief: The research question, purpose, study area, and dataset sources.
 
-* Source: OpenStreetMap via QuickOSM
-* Feature count: 44
-* Geometry: Polygon
-* Key columns: osm_id, osm_type, natural, water, type
-* Notes: Contains mapped waterbody features within the Kaduna North study area. Some attribute fields may be empty where information is unavailable.
+Week 2 — Data Notes: The datasets collected, feature counts, fields, and known issues.
+
+Week 3 — Data Preparation: CRS selection, reprojection, clipping to Kaduna North LGA, and five quality checks.
+
+Week 4 — Analysis: Analysis of the prepared data and production of the final flood-exposure map.
+
+What’s still missing
+
+Settlement extent data and a DEM/elevation dataset are still needed to identify specific settlements and assess the low-lying part of the original flood-exposure question.
+
+Data
+
+The processed analysis-ready data is included in the repository. Raw and processed datasets are kept separately where applicable.
+
+
+
