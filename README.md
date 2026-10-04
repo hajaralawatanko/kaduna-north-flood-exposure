@@ -55,5 +55,9 @@ Data
 
 The processed analysis-ready data is included in the repository. Raw and processed datasets are kept separately where applicable.
 
+Month 2: development environment and early Python
+
+Week 5: set up Python, VS Code and the terminal. hello.py runs.
+
 
 
