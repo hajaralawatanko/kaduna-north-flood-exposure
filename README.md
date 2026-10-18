@@ -59,5 +59,7 @@ Month 2: development environment and early Python
 
 Week 5: set up Python, VS Code and the terminal. hello.py runs.
 
+Week 7: analyse.py reads wards.csv, converts each area and classifies each ward.
+
 
 
