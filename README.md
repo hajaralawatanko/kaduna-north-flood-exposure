@@ -62,5 +62,5 @@ Week 5: set up Python, VS Code and the terminal. hello.py runs.
 Week 7: analyse.py reads wards.csv, converts each area and classifies each ward.
 
 Week 8: inspect_data.py summarises ward names and area values in the wards.csv dataset.
-
+Week 9: refactored the data analysis script into functions and summarised the ward data.
 
